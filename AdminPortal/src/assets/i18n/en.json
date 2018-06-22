@@ -1,0 +1,78 @@
+{
+  "#Account": {
+    "PhoneNumber": "Phone number",
+    "Language": "Language",
+    "SaveProfile": "Save profile",
+    "SaveProfileSucces": "Profile succesfully saved",
+    "SaveProfileFailed": "Profile failed to save"
+  },
+  "#LoginScreen": {
+    "ForgottenPassword":"Lost password"
+  },
+  "#NavigationMenu": {
+    "Account": "Account",
+    "UserManagement": "User management",
+    "RoleManagement": "Role management",
+    "Logout": "Logout",
+    "AttendanceLog": "Attendance log"
+  },
+  "#ResetPassword": {
+    "ResetPassword": "Reset password",
+    "NewPassword": "New password",
+    "ConfirmNewPassword": "Confirm new password",
+    "PasswordMustMatch": "The passwords do not match",
+    "PasswordLength": "The password needs to be at least 8 characters long"
+  },
+  "#Common": {
+    "Login": "Login",
+    "Profile": "Profile",
+    "EmailAddress": "E-mail Address",
+    "Password": "Password",
+    "ConfirmPassword": "Confirm Password",
+    "Name": "Name",
+    "PrimaryPhone": "Primary phone",
+    "MobilePhone": "Mobile phone",
+    "Role": "Role"
+  },
+  "#UserRoleManagement": {
+    "AddUser": "Add new user",
+    "EditUser": "Edit user",
+    "AddRole": "Add new role",
+    "EditRole": "Edit role",
+    "Search": "Search",
+    "Actions": "Actions",
+    "Next": "Next",
+    "Previous": "Previous",
+    "CreateNewRole": "Create new role",
+    "RoleName": "Role name",
+    "SelectRole": "Select a role",
+    "CreateNewUser": "Add user",
+    "UsersPerPage": "Users per page",
+    "RolesPerPage": "Roles per page",
+    "AddUserSuccess": "The user has been successfully created and an e-mail has been sent to:",
+    "AddUserFailed": "Failed to create the new user",
+    "EditUserSuccess": "User edited succesfully",
+    "EditUserFailed": "Failed to edit the user",
+    "RemovedUserSuccess": "User removed succesfully",
+    "RemovedUserFailed": "Failed to remove the user",
+    "AddRoleSuccess": "Role added succesfully",
+    "AddRoleFailed": "Failed to create the new role",
+    "EditRoleSuccess": "Role edited succesfully",
+    "EditRoleFailed": "Failed to edit the role",
+    "RemovedRoleSuccess": "Role removed succesfully",
+    "RemovedRoleFailed": "Failed to remove the role",
+    "CannotChangeOwnEmail": "It is not possible to change your own e-mail address it has been reverted to:"
+  },
+  "#Errors":{
+    "RequiredEmail": "E-mail address is required",
+    "RequiredPassword": "Password is required",
+    "RequiredPasswordLength": "Password is too short",
+    "LoginFailed": "Login Failed",
+    "requiredDomain": "Userdomain is required"
+  },
+  "#Reset": {
+    "ResetPassword": "Reset password",
+    "PasswordHasBeenReset": "Your password has been reset successfully and an e-mail has been sent.",
+    "PasswordFailedToReset": "Failed to reset password, was the address correct?"
+  }
+}

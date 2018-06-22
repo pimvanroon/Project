@@ -1,0 +1,156 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', Arial;
+    font-size: 1rem;
+}
+
+
+.card-header {
+    height: 3.5rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+*:focus {
+    outline: none;
+    box-shadow:none;
+} 
+
+.invalid-form {
+    border: 0.1rem solid @invalid-form;
+}
+.valid-form {
+    border: 0.1rem solid @valid-form;
+}
+.card-body {
+    overflow-x: auto;
+    padding: 0.5rem 1.25rem !important;
+
+    .dropdown-toggle {
+        height: 2.125rem;
+    }
+    .table-wrapper {
+        background: @WhiteColor;
+        margin: 0 auto auto auto;
+        border-radius: 0.3rem;
+        box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,.05);
+
+        .btn {
+            float: right;
+            margin-left: 1rem;
+        }
+
+        .show-entries select.form-control {        
+            width: 4.5rem;
+            margin: 0 0.5rem;
+        }
+
+        .table-responsive {
+            display: table;
+        }
+
+        .table-filter .filter-group {
+            float: right;
+        }
+
+        .table-filter {
+            padding: 0.3125rem 0 0.3125rem;
+            margin-bottom: 0.3125rem;
+
+            .btn {
+                height: 2.125rem;
+            }
+
+            label {
+                font-weight: normal;
+                margin-left: 0.625rem;
+            }
+
+            input, select {
+                display: inline-block;
+                height: 2.125rem;
+                margin-left: 0.3125rem;
+                border: 0.1rem solid @DarkGreyColor!important;
+                border-radius: 0.4875rem;
+                border-color: @WhiteColor;
+                box-shadow: none;
+            }
+
+            input {
+                width: 11rem;
+                display: inline-block;
+            }
+        }
+
+        .filter-group select.form-control {
+            width: 6.875rem;
+        }
+        
+        .table.table tr { 
+            th, td {
+                padding: 0.75rem 0.9375rem;
+                vertical-align: middle;
+            }
+
+            th{
+                i {
+                    font-size: 0.8125rem;
+                    margin: 0 0.3125rem;
+                    cursor: pointer;
+                }
+                &:first-child {
+                    width: 3.75rem;
+                }
+                &:last-child {
+                    padding-left: 0rem;
+                    width: 5rem;
+                }
+            }
+
+            td {
+                border-top: 0rem !important;
+
+                a.view {        
+                    width: 1.875rem;
+                    height: 1.875rem;
+                    color: @BlueColor;
+                    border-radius: 1.875rem;
+                    text-align: center;
+                    cursor: pointer;
+
+                    &:hover {        
+                        color: @BlackColor;
+                    }
+
+                    i {
+                        font-size: 1.375rem;
+                        margin: 0.125rem 0 0 0.0625rem;
+                    } 
+                }
+            }
+
+        table.table-striped{
+
+            tbody tr:nth-of-type(odd) {
+                background-color: @LightGreyColor;
+            }
+
+            &.table-hover tbody tr:hover {
+                background: @WhiteColor;
+            }
+        }        
+    }
+
+        @media only screen and (max-width: 768px) {
+            .btn span {
+                display: none;
+            }
+        }
+    }
+}

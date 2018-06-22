@@ -1,0 +1,78 @@
+{
+  "#Account": {
+    "PhoneNumber": "Numéro de téléphone",
+    "Language": "La langue",
+    "SaveProfile": "Enregistrer le profil",
+    "SaveProfileSucces": "Profil enregistré avec succès",
+    "SaveProfileFailed": "Le profil n'a pas pu être sauvegardé"
+  },
+  "#LoginScreen": {
+    "ForgottenPassword":"Mot de passe perdu"
+  },
+  "#NavigationMenu": {
+    "Account": "Compte",
+    "UserManagement": "Gestion des utilisateurs",
+    "RoleManagement": "Gestion des rôles",
+    "Logout": "Déconnectez",
+    "AttendanceLog": "Journal de présence"
+  },
+  "#ResetPassword": {
+    "ResetPassword": "Réinitialiser le mot de passe",
+    "NewPassword": "Nouveau mot de passe",
+    "ConfirmNewPassword": "Confirmer le nouveau mot de passe",
+    "PasswordMustMatch": "Le mot de passe ne correspond pas",
+    "PasswordLength": "Le mot de passe doit comporter au moins 8 caractères"
+  },
+  "#Common": {
+    "Login": "S'identifier",
+    "Profile": "Profil",
+    "EmailAddress": "Adresse e-mail",
+    "Password": "Mot de passe",
+    "ConfirmPassword": "Confirmez le mot de passe",
+    "Name": "Prénom",
+    "PrimaryPhone": "Téléphone primaire",
+    "MobilePhone": "Téléphone portable",
+    "Role": "Rôle"
+  },
+  "#UserRoleManagement": {
+    "AddUser": "Ajouter un utilisateur",
+    "EditUser": "Modifier l'utilisateur",
+    "AddRole": "Ajouter un rôle",
+    "EditRole": "Modifier le rôle",
+    "Search": "Chercher",
+    "Actions": "Actions",
+    "Next": "Prochain",
+    "Previous": "Précédent",
+    "CreateNewRole": "Créer un nouveau rôle",
+    "RoleName": "Nom de rôle",
+    "SelectRole": "Sélectionnez un rôle",
+    "CreateNewUser": "Ajouter un utilisateur",
+    "UsersPerPage": "Utilisateurs par page",
+    "RolesPerPage": "Rôles par page",
+    "AddUserSuccess": "L'utilisateur a été créé avec succès et un e-mail a été envoyé à:",
+    "AddUserFailed": "Impossible de créer le nouvel utilisateur",
+    "EditUserSuccess": "Utilisateur édité avec succès",
+    "EditUserFailed": "Échec de l'édition de l'utilisateur",
+    "RemovedUserSuccess": "Utilisateur supprimé avec succès",
+    "RemovedUserFailed": "Échec de la suppression de l'utilisateur",
+    "AddRoleSuccess": "Rôle ajouté avec succès",
+    "AddRoleFailed": "Impossible de créer le nouveau rôle",
+    "EditRoleSuccess": "Rôle édité avec succès",
+    "EditRoleFailed": "Échec de l'édition du rôle",
+    "RemovedRoleSuccess": "Rôle supprimé avec succès",
+    "RemovedRoleFailed": "Échec de la suppression du rôle",
+    "CannotChangeOwnEmail": "Il n'est pas possible de changer votre propre adresse e-mail. Il a été ramené à:"
+  },
+  "#Errors":{
+    "RequiredEmail": "Adresse e-mail est nécessaire",
+    "RequiredPassword": "Mot de passe requis",
+    "RequiredPasswordLength": "Le mot de passe est trop court",
+    "LoginFailed": "Échec de la connexion",
+    "requiredDomain": "Userdomain est requis"
+  },
+  "#Reset": {
+    "ResetPassword": "Réinitialiser le mot de passe",
+    "PasswordHasBeenReset": "Votre mot de passe a été réinitialisé avec succès et un e-mail a été envoyé.",
+    "PasswordFailedToReset": "Impossible de réinitialiser le mot de passe, était l'adresse correcte?"
+  }
+}

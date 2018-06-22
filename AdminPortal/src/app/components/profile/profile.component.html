@@ -1,0 +1,85 @@
+<div class="container-fluid py-3" *ngIf="user">
+    <div class="row">
+        <div class="col-md-12 mx-auto">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h3 class="text-center mb-12">{{'#Common.Profile' | translate}}</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-1 profilepicture">
+                            <img srcset="./../assets/images/contactplaceholder.png" src="" class="img-circle img-responsive">
+                        </div>
+                        <div class="col-md-11">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="name" class="col-md-2 col-form-label">{{'#Common.Name' | translate}}</label>
+                                    <div class="col-md-10">
+                                        <input name="name" type="text" class="form-control" [(ngModel)]="user.name" id="name" autocomplete="nope" [ngModelOptions]="{standalone: true}">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="staticEmail" class="col-md-2 col-form-label">{{'#Common.EmailAddress' | translate}}</label>
+                                    <div class="col-md-10">
+                                        <input name="email" type="text" class="form-control" [(ngModel)]="user.email" autocomplete="nope" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="primaryPhone" class="col-md-2 col-form-label">{{'#Common.PrimaryPhone' | translate}}</label>
+                                    <div class="col-md-10">
+                                        <input name="primaryPhone" type="text" class="form-control" id="primaryPhone" [(ngModel)]="user.primaryPhone" autocomplete='nope'
+                                            [ngModelOptions]="{standalone: true}" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="mobilePhone" class="col-md-2 col-form-label">{{'#Common.MobilePhone' | translate}}</label>
+                                    <div class="col-md-10">
+                                        <input name="mobilePhone" type="text" class="form-control" id="mobilePhone" [(ngModel)]="user.mobilePhone" autocomplete='nope'
+                                            [ngModelOptions]="{standalone: true}">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label for="staticLanguage" class="col-md-2 col-form-label">{{'#Account.Language' | translate}}</label>
+                                    <div class="col-md-8">
+                                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{selectedLangFull}}
+                                        </button>
+                                        <div class="dropdown-menu  dropdown-menu-right">
+                                            <a class="dropdown-item" *ngFor="let lang of supportedLanguages" data-value="lang.shortName" (click)="selectLang(lang.shortName)">
+                                                &emsp; {{lang.displayName}}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-md-2 col-form-label">{{'#ResetPassword.NewPassword' | translate}}</label>
+                                    <div class="col-md-10">
+                                        <input [type]="showPassword ? 'text' : 'password'" type="password" class="form-control" id="password" [(ngModel)]="newPassword"
+                                            autocomplete="nope" [ngModelOptions]="{standalone: true}">
+                                        <span class="fa fa-eye" (click)="toggleShowPassword()"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-md-2 col-form-label">{{'#ResetPassword.ConfirmNewPassword' | translate}}</label>
+                                    <div class="col-md-10">
+                                        <input name="confirmPassword" [type]="showPassword ? 'text' : 'password'" class="form-control" id="confirmPassword" [(ngModel)]="confirmNewPassword"
+                                            autocomplete="nope" [ngModelOptions]="{standalone: true}">
+                                        <span class="fa fa-eye" (click)="toggleShowPassword()"></span>
+                                        <div *ngIf="newPassword !== confirmNewPassword && (newpassword !== '' || confirmNewPassword !== '')" class="alert alert-danger">
+                                            {{'#ResetPassword.PasswordMustMatch' | translate}}
+                                        </div>
+                                        <div *ngIf="newpassword?.length < 8 && confirmNewPassword?.length < 8 && newpassword !== '' && confirmNewPassword !== ''"
+                                            class="alert alert-danger">
+                                            {{'#ResetPassword.PasswordLength' | translate}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary float-right" (click)="SaveProfile()">{{'#Account.SaveProfile' | translate}}</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

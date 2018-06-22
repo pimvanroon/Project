@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <RootNamespace>Communication</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <NoPackageAnalysis>true</NoPackageAnalysis>
+        <DebugType>Full</DebugType>
+        <ApplicationIcon />
+        <Win32Resource />
+        <ProjectGuid>{38762EC4-5FE3-474E-A1F1-300131C32517}</ProjectGuid>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+        <PackageReference Include="Nerdbank.GitVersioning" Version="2.1.23" />
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="6.8.2.4717" />
+        <PackageReference Include="WampSharp.Default" Version="18.3.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="System">
+            <HintPath>System</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>

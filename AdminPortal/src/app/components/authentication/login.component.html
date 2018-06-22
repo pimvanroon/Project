@@ -1,0 +1,63 @@
+<div class="container-fluid bg-light py-3">
+    <div class="row">
+        <div class="col-md-2 mx-auto"></div>
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center mb-4">{{ '#Common.Login' | translate }}</h1>
+                </div>
+                <div class="card-body">
+                    <form novalidate [formGroup]="myform">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="{{'#Common.EmailAddress' | translate}}" formControlName="emailForm"
+                                (keypress)=keyPressed($event) [ngClass]="{'invalid-form': emailForm.invalid && (emailForm.dirty || emailForm.touched),
+                                            'valid-form': emailForm.valid && (emailForm.dirty || emailForm.touched)}" [(ngModel)]="emailAddress"
+                                required>
+                            <div class="alert alert-danger" *ngIf="emailForm.errors && (emailForm.dirty || emailForm.touched)">
+                                <div *ngIf="emailForm.errors.pattern || emailForm.dirty ">{{ '#Errors.RequiredEmail' | translate }}</div>
+                            </div>
+                        </div>
+                        <div class="form-group" *ngIf="!resetPassword">
+                            <input [type]="showPassword ? 'text' : 'password'" class="form-control" placeholder="{{'#Common.Password' | translate}}"
+                                formControlName="passwordForm" (keypress)=keyPressed($event) [ngClass]="{'invalid-form': passwordForm.invalid && (passwordForm.dirty || passwordForm.touched),
+                                            'valid-form': passwordForm.valid && (passwordForm.dirty || passwordForm.touched)}"
+                                [(ngModel)]="password" required>
+                            <span class="fa fa-eye" (click)="toggleShowPassword()"></span>
+                            <div class="alert alert-danger" *ngIf="passwordForm.errors && (passwordForm.dirty || passwordForm.touched)">
+                                <div *ngIf="passwordForm.errors.required">{{ '#Errors.RequiredPassword' | translate }}</div>
+                                <div *ngIf="passwordForm.errors.minlength">{{ '#Errors.RequiredPasswordLength' | translate }}</div>
+                            </div>
+                            <div *ngIf="passwordHasChanged">
+                                <div>{{ '#Reset.PasswordHasBeenReset' | translate }}</div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn btn-primary submitButton" (click)="login()" *ngIf="!resetPassword" (keypress)=keyPressed($event)> {{ '#Common.Login' | translate }} </button>
+                    <button class="btn btn-primary submitButton" (click)="reset()" *ngIf="resetPassword"> {{ '#ResetPassword.ResetPassword' | translate }} </button>
+                    <div *ngIf="!resetPassword">
+                        <a class="link" (click)="forgottenPassword(true)">
+                            <span>{{ '#LoginScreen.ForgottenPassword' | translate }}?</span>
+                        </a>
+                    </div>
+                    <div *ngIf="resetPassword">
+                        <a class="link" (click)="forgottenPassword(false)">
+                            <span>{{ '#Common.Login' | translate }}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mx-auto" hidden>
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="text-center mb-4">{{' #LoginScreen.ThirdPartyOptions' | translate }}</h1>
+                </div>
+                <div class="card-body">
+                    <button class="btn btn-primary" (click)="loginGoogle()"> Microsoft </button>
+                    <button class="btn btn-primary" (click)="loginMicrosoft()"> Google </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 mx-auto"></div>
+    </div>
+</div>

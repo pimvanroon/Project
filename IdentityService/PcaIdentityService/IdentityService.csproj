@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <RootNamespace>IdentityService</RootNamespace>
+    <ProjectGuid>{a85ccccf-ce5c-4fb3-8f3a-dcd2dab05d30}</ProjectGuid>
+    <UserSecretsId>f85cb4dc-8751-4a71-9ea7-6a9cf6ffe0de</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.1.0" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="2.1.23" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommunicationLib\CommunicationLib\CommunicationLib.csproj" />
+  </ItemGroup>
+</Project>

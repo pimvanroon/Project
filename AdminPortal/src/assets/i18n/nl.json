@@ -1,0 +1,78 @@
+{
+  "#Account": {
+    "PhoneNumber": "Telefoonnummer",
+    "Language": "Taal",
+    "SaveProfile": "Profiel opslaan",
+    "SaveProfileSucces": "Profiel succesvol opgeslagen",
+    "SaveProfileFailed": "Profiel is niet opgeslagen"
+  },
+  "#LoginScreen": {
+    "ForgottenPassword":"Wachtwoord vergeten"
+  },
+  "#NavigationMenu": {
+    "Account": "Account",
+    "UserManagement": "Gebruikersbeheer",
+    "RoleManagement": "Rol management",
+    "Logout": "Uitloggen",
+    "AttendanceLog": "Aanwezigheidslog"
+  },
+  "#ResetPassword": {
+    "ResetPassword": "Wachtwoord opnieuw instellen",
+    "NewPassword": "Nieuw Wachtwoord",
+    "ConfirmNewPassword": "Bevestig nieuw wachtwoord",
+    "PasswordMustMatch": "De wachtwoorden komen niet overeen",
+    "PasswordLength": "Het wachtwoord moet ten minste 8 tekens lang zijn"
+  },
+  "#Common": {
+    "Login": "Log in",
+    "Profile": "Profiel",
+    "EmailAddress": "E-mailadres",
+    "Password": "Wachtwoord",
+    "ConfirmPassword": "bevestig wachtwoord",
+    "Name": "Naam",
+    "PrimaryPhone": "Vaste telefoon",
+    "MobilePhone": "Mobiele telefoon",
+    "Role": "Rol"
+  },
+  "#UserRoleManagement": {
+    "AddUser": "Gebruiker toevoegen",
+    "EditUser": "Gebruiker bewerken",
+    "AddRole": "Rol toevoegen",
+    "EditRole": "Bewerk de rol",
+    "Search": "Zoeken",
+    "Actions": "Acties",
+    "Next": "Volgende",
+    "Previous": "Vorige",
+    "CreateNewRole": "Creëer de nieuwe rol",
+    "RoleName": "Rol naam",
+    "SelectRole": "Selecteer een rol",
+    "CreateNewUser": "Voeg gebruiker toe",
+    "UsersPerPage": "Gebruikers per pagina",
+    "RolesPerPage": "Rollen per pagina",
+    "AddUserSuccess": "De gebruiker is succesvol aangemaakt en een e-mail is verzonden naar:",
+    "AddUserFailed": "Het is niet gelukt om de nieuwe gebruiker te maken",
+    "EditUserSuccess": "Gebruiker met succes bewerkt",
+    "EditUserFailed": "Het is niet gelukt om de gebruiker te bewerken",
+    "RemovedUserSuccess": "Gebruiker succesvol verwijderd",
+    "RemovedUserFailed": "Het is niet gelukt om de gebruiker te verwijderen",
+    "AddRoleSuccess": "Rol succesvol toegevoegd",
+    "AddRoleFailed": "Het is niet gelukt om de rol te verwijderen",
+    "EditRoleSuccess": "De rol is succesvol bewerkt",
+    "EditRoleFailed": "Het is niet gelukt om de rol te bewerken",
+    "RemovedRoleSuccess": "Rol succesvol verwijderd",
+    "RemovedRoleFailed": "Het is niet gelukt om de rol te verwijderen",
+    "CannotChangeOwnEmail": "Het is niet mogelijk om uw eigen e-mailadres te wijzigen. Het is terug gezet naar:"
+  },
+  "#Errors":{
+    "RequiredEmail": "E-mailadres is verplicht",
+    "RequiredPassword": "Een wachtwoord is verplicht",
+    "RequiredPasswordLength": "Wachtwoord is te kort",
+    "LoginFailed": "Aanmelden mislukt",
+    "requiredDomain": "Userdomain is verplicht"
+  },
+  "#Reset": {
+    "ResetPassword": "Wachtwoord opnieuw instellen",
+    "PasswordHasBeenReset": "Uw wachtwoord is succesvol gereset en een e-mail is verzonden.",
+    "PasswordFailedToReset": "Het is niet gelukt om het password te resetten, is het e-mailadres correct?"
+  }
+}

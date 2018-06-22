@@ -1,0 +1,15 @@
+<pca-spinner *ngIf="requestIsActive"></pca-spinner>
+<div *ngIf="isLoggedIn" class='container-fluid'>
+    <div class='row'>
+        <pca-navbar></pca-navbar>
+    </div>
+    <div class='row'>
+        <div class="main-panel">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<div *ngIf="!isLoggedIn">
+    <pca-login></pca-login>
+</div>
+<ng2-toasty></ng2-toasty>

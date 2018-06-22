@@ -1,0 +1,5 @@
+{
+    "identityService": "http://localhost:22224",
+    "attendant": "http://localhost:4200",
+    "loginPortal": "http://localhost:4201"
+}

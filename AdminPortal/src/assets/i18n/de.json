@@ -1,0 +1,78 @@
+{
+  "#Account": {
+    "PhoneNumber": "Telefonnummer",
+    "Language": "Sprache",
+    "SaveProfile": "Profil sichern",
+    "SaveProfileSucces": "Das Profil wurde erfolgreich gespeichert",
+    "SaveProfileFailed": "Profil konnte nicht gespeichert werden"
+  },
+  "#LoginScreen": {
+    "ForgottenPassword":"Passwort vergessen"
+  },
+  "#NavigationMenu": {
+    "Account": "Konto",
+    "UserManagement": "Benutzerverwaltung",
+    "RoleManagement": "Rollenverwaltung",
+    "Logout": "Ausloggen",
+    "AttendanceLog": "Anwesenheitsprotokoll"
+  },
+  "#ResetPassword": {
+    "ResetPassword": "Passwort zurücksetzen",
+    "NewPassword": "Neues Passwort",
+    "ConfirmNewPassword": "Bestätige neues Passwort",
+    "PasswordMustMatch": "Die Passwörter stimmen nicht überein",
+    "PasswordLength": "Das Passwort muss mindestens 8 Zeichen lang sein"
+  },
+  "#Common": {
+    "Login": "Anmeldung",
+    "Profile": "Profiel",
+    "EmailAddress": "E-Mail-Addresse",
+    "Password": "Passwort",
+    "ConfirmPassword": "Bestätige Passwort",
+    "Name": "Name",
+    "PrimaryPhone": "Primäres Telefon",
+    "MobilePhone": "Mobiltelefon",
+    "Role": "Rolle"
+  },
+  "#UserRoleManagement": {
+    "AddUser": "Benutzer hinzufügen",
+    "EditUser": "Benutzer bearbeiten",
+    "AddRole": "Rolle hinzufügen",
+    "EditRole": "Rolle bearbeiten",
+    "Search": "Suche",
+    "Actions": "Aktionen",
+    "Next": "Nächster",
+    "Previous": "Bisherige",
+    "CreateNewRole": "Erstelle eine neue Rolle",
+    "RoleName": "Rollenname",
+    "SelectRole": "Wählen Sie eine Rolle aus",
+    "CreateNewUser": "Benutzer hinzufügen",
+    "UsersPerPage": "Nutzer pro Seite",
+    "RolesPerPage": "Rollen pro Seite",
+    "AddUserSuccess": "Der Benutzer wurde erfolgreich erstellt und eine E-Mail wurde gesendet an:",
+    "AddUserFailed": "Der neue Benutzer konnte nicht erstellt werden",
+    "EditUserSuccess": "Benutzer wurde erfolgreich bearbeitet",
+    "EditUserFailed": "Fehler beim Bearbeiten des Benutzers",
+    "RemovedUserSuccess": "Benutzer wurde erfolgreich entfernt",
+    "RemovedUserFailed": "Fehler beim Entfernen des Benutzers",
+    "AddRoleSuccess": "Rolle wurde erfolgreich hinzugefügt",
+    "AddRoleFailed": "Die neue Rolle konnte nicht erstellt werden",
+    "EditRoleSuccess": "Die Rolle wurde erfolgreich bearbeitet",
+    "EditRoleFailed": "Fehler beim Bearbeiten der Rolle",
+    "RemovedRoleSuccess": "Rolle erfolgreich entfernt",
+    "RemovedRoleFailed": "Fehler beim Entfernen der Rolle",
+    "CannotChangeOwnEmail": "Es ist nicht möglich, Ihre eigene E-Mail-Adresse zu ändern. Es wurde zurückgesetzt zu:"
+  },
+  "#Errors":{
+    "RequiredEmail": "E-Mailadresse wird benötigt",
+    "RequiredPassword": "Passwort ist benötigt",
+    "RequiredPasswordLength": "Das Passwort ist zu kurz",
+    "LoginFailed": "Anmeldung fehlgeschlagen",
+    "requiredDomain": "Userdomain ist erforderlich"
+  },
+  "#Reset": {
+    "ResetPassword": "Passwort zurücksetzen",
+    "PasswordHasBeenReset": "Ihr Passwort wurde erfolgreich zurückgesetzt und eine E-Mail wurde gesendet.",
+    "PasswordFailedToReset": "Konnte das Passwort nicht zurücksetzen, war die Adresse korrekt?"
+  }
+}
